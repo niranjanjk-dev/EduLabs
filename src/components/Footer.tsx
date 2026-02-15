@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, Globe, ArrowRight, ArrowLeft } from 'lucide-react';
+import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, ArrowRight, ArrowLeft } from 'lucide-react';
 
 const Footer = () => {
     const branches = [
@@ -16,13 +16,16 @@ const Footer = () => {
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
+    const [isAutoPlayPaused, setIsAutoPlayPaused] = useState(false);
 
     useEffect(() => {
+        if (isAutoPlayPaused) return;
+
         const timer = setInterval(() => {
             nextSlide();
         }, 6000);
         return () => clearInterval(timer);
-    }, []);
+    }, [isAutoPlayPaused, branches.length]);
 
     const nextSlide = () => {
         setCurrentIndex((prev) => (prev + 1) % branches.length);
@@ -30,6 +33,18 @@ const Footer = () => {
 
     const prevSlide = () => {
         setCurrentIndex((prev) => (prev - 1 + branches.length) % branches.length);
+    };
+
+    const handleManualNext = () => {
+        nextSlide();
+    };
+
+    const handleManualPrev = () => {
+        prevSlide();
+    };
+
+    const handleManualSelect = (index: number) => {
+        setCurrentIndex(index);
     };
 
     const currentBranch = branches[currentIndex];
@@ -48,9 +63,6 @@ const Footer = () => {
                 {/* 1. Global Presence Section */}
                 <div className="mb-24">
                     <div className="flex flex-col items-center justify-center mb-16 space-y-4">
-                        <div className="p-3 bg-charcoal-900 rounded-full border border-charcoal-800 shadow-xl">
-                            <Globe className="text-primary-500" size={24} />
-                        </div>
                         <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight text-center">Our Presence Across India</h3>
                         <p className="text-charcoal-400 text-sm max-w-lg text-center">
                             Visit our offices in major cities for in-person counseling and support.
@@ -100,18 +112,22 @@ const Footer = () => {
                                     {branches.map((_, idx) => (
                                         <button
                                             key={idx}
-                                            onClick={() => setCurrentIndex(idx)}
-                                            className={`h-1 rounded-full transition-all duration-300 ${idx === currentIndex ? "w-6 bg-primary-500" : "w-1.5 bg-charcoal-700 hover:bg-charcoal-600"
+                                            onClick={() => handleManualSelect(idx)}
+                                            className={`rounded-full transition-all duration-300 ${idx === currentIndex ? "w-2.5 h-2.5 bg-primary-500 scale-110 shadow-[0_0_10px_rgba(59,130,246,0.5)]" : "w-1.5 h-1.5 bg-charcoal-700 hover:bg-charcoal-500 hover:scale-110"
                                                 }`}
                                             aria-label={`View ${branches[idx].city} branch`}
                                         />
                                     ))}
                                 </div>
-                                <div className="flex gap-2 shrink-0">
-                                    <button onClick={prevSlide} className="w-9 h-9 rounded-full border border-charcoal-700 flex items-center justify-center text-charcoal-400 hover:text-white hover:bg-charcoal-800 transition-all active:scale-95">
+                                <div
+                                    className="flex gap-2 shrink-0"
+                                    onMouseEnter={() => setIsAutoPlayPaused(true)}
+                                    onMouseLeave={() => setIsAutoPlayPaused(false)}
+                                >
+                                    <button onClick={handleManualPrev} className="w-9 h-9 rounded-full border border-charcoal-700 flex items-center justify-center text-charcoal-400 hover:text-white hover:bg-charcoal-800 transition-all active:scale-95">
                                         <ArrowLeft size={16} />
                                     </button>
-                                    <button onClick={nextSlide} className="w-9 h-9 rounded-full bg-primary-500 text-white flex items-center justify-center hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/20 active:scale-95">
+                                    <button onClick={handleManualNext} className="w-9 h-9 rounded-full bg-primary-500 text-white flex items-center justify-center hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/20 active:scale-95">
                                         <ArrowRight size={16} />
                                     </button>
                                 </div>
@@ -192,11 +208,16 @@ const Footer = () => {
                         </p>
 
                         <div className="flex gap-4 justify-center lg:justify-start">
-                            {[Facebook, Twitter, Instagram, Linkedin].map((Icon, i) => (
+                            {[
+                                { Icon: Facebook, color: "hover:bg-[#1877F2] hover:border-[#1877F2] hover:text-white" },
+                                { Icon: Twitter, color: "hover:bg-[#1DA1F2] hover:border-[#1DA1F2] hover:text-white" },
+                                { Icon: Instagram, color: "hover:bg-gradient-to-tr hover:from-pink-500 hover:to-purple-500 hover:border-pink-500 hover:text-white" },
+                                { Icon: Linkedin, color: "hover:bg-[#0A66C2] hover:border-[#0A66C2] hover:text-white" }
+                            ].map(({ Icon, color }, i) => (
                                 <a
                                     key={i}
                                     href="#"
-                                    className="w-10 h-10 rounded-xl bg-charcoal-900 border border-charcoal-800 flex items-center justify-center text-charcoal-400 hover:bg-primary-500 hover:text-white hover:border-primary-500 hover:-translate-y-1 transition-all duration-300 shadow-md"
+                                    className={`w-10 h-10 rounded-xl bg-charcoal-900 border border-charcoal-800 flex items-center justify-center text-charcoal-400 transition-all duration-300 shadow-md hover:-translate-y-1 ${color}`}
                                 >
                                     <Icon size={18} />
                                 </a>
