@@ -283,7 +283,11 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-charcoal-800 pt-8 mt-4 text-center flex flex-col md:flex-row justify-between items-center gap-4 text-charcoal-500 text-[10px] uppercase tracking-wider font-medium">
-                    <p>© 2025 EduConsult Inc. All rights reserved.</p>
+                    <div className="flex flex-col md:flex-row gap-4 items-center">
+                        <p>© 2025 EduConsult Inc. All rights reserved.</p>
+                        <span className="hidden md:block text-charcoal-700">|</span>
+                        <p className="text-charcoal-600">Powered by LbxSuite</p>
+                    </div>
                     <div className="flex gap-6">
                         <a href="#" className="hover:text-white transition-colors">Sitemap</a>
                         <a href="#" className="hover:text-white transition-colors">Disclaimer</a>
