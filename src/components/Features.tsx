@@ -45,7 +45,7 @@ const Features = () => {
                             We understand that studying abroad is a big decision. That's why we streamline every step of the process, from finding the right funding to securing your visa, so you can focus on your education.
                         </p>
 
-                        <button className="bg-secondary-500 text-white px-8 py-3 rounded-full font-bold hover:bg-secondary-600 transition-colors shadow-lg">
+                        <button className="bg-secondary-500 text-white px-8 py-3 rounded-xl font-bold hover:bg-secondary-600 transition-colors shadow-lg">
                             Get Free Assessment
                         </button>
                     </div>

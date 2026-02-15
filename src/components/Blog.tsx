@@ -74,7 +74,7 @@ const Blog = () => {
                 </div>
 
                 <div className="mt-16 text-center">
-                    <button className="bg-charcoal-50 text-charcoal-900 border border-charcoal-200 px-8 py-3 rounded-full font-bold hover:bg-charcoal-900 hover:text-white transition-all">
+                    <button className="bg-charcoal-50 text-charcoal-900 border border-charcoal-200 px-8 py-3 rounded-xl font-bold hover:bg-charcoal-900 hover:text-white transition-all">
                         Read All Articles
                     </button>
                 </div>

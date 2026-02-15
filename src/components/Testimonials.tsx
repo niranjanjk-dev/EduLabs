@@ -43,7 +43,7 @@ const Testimonials = () => {
                             <div className="absolute bottom-0 left-0 p-6 text-white text-left">
                                 <h3 className="font-bold text-lg">{story.name}</h3>
                                 <p className="text-sm opacity-80">{story.university}</p>
-                                <button className="mt-3 bg-primary-500 hover:bg-primary-600 px-4 py-1.5 rounded-full text-xs font-bold transition-colors">
+                                <button className="mt-3 bg-primary-500 hover:bg-primary-600 px-4 py-1.5 rounded-xl text-xs font-bold transition-colors">
                                     Watch Story
                                 </button>
                             </div>

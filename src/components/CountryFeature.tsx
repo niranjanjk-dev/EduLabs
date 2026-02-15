@@ -31,7 +31,7 @@ const CountryContent = ({ activeCountry }: { activeCountry: string }) => {
                     ))}
                 </div>
 
-                <button className="mt-8 bg-white text-charcoal-900 px-8 py-3 rounded-full font-bold flex items-center gap-2 hover:bg-white/90 transition-all">
+                <button className="mt-8 bg-white text-charcoal-900 px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-white/90 transition-all">
                     Explore {countries.find(c => c.id === activeCountry)?.label} <ChevronRight size={20} />
                 </button>
             </div>
@@ -67,7 +67,7 @@ const CountryFeature = () => {
                                 key={country.id}
                                 onClick={() => setActiveTab(country.id)}
                                 className={cn(
-                                    "px-6 py-2.5 rounded-full text-sm font-medium transition-all duration-300",
+                                    "px-6 py-2.5 rounded-xl text-sm font-medium transition-all duration-300",
                                     activeTab === country.id
                                         ? "bg-white text-charcoal-900 shadow-md"
                                         : "text-charcoal-500 hover:text-charcoal-900 hover:bg-charcoal-100"

@@ -34,7 +34,7 @@ const Webinar = () => {
                             Get insider tips, ask questions in real-time, and learn from the experts without spending a dime.
                         </p>
                     </div>
-                    <button className="hidden md:flex items-center gap-2 text-white border border-white/20 px-6 py-3 rounded-full hover:bg-white/10 transition-colors">
+                    <button className="hidden md:flex items-center gap-2 text-white border border-white/20 px-6 py-3 rounded-xl hover:bg-white/10 transition-colors">
                         View All Events <ArrowRight size={18} />
                     </button>
                 </div>
@@ -83,7 +83,7 @@ const Webinar = () => {
                         </motion.div>
                     ))}
                 </div>
-                <button className="md:hidden mt-8 w-full flex items-center justify-center gap-2 text-white border border-white/20 px-6 py-3 rounded-full hover:bg-white/10 transition-colors">
+                <button className="md:hidden mt-8 w-full flex items-center justify-center gap-2 text-white border border-white/20 px-6 py-3 rounded-xl hover:bg-white/10 transition-colors">
                     View All Events <ArrowRight size={18} />
                 </button>
             </div>

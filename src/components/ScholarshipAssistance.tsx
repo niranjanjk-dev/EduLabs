@@ -49,10 +49,10 @@ const ScholarshipAssistance = () => {
                             </p>
 
                             <div className="flex gap-4">
-                                <button className="bg-primary-500 text-white px-8 py-3.5 rounded-full font-bold hover:bg-primary-600 transition-all shadow-lg hover:shadow-primary-500/25">
+                                <button className="bg-primary-500 text-white px-8 py-3.5 rounded-xl font-bold hover:bg-primary-600 transition-all shadow-lg hover:shadow-primary-500/25">
                                     Get Free Assessment
                                 </button>
-                                <button className="bg-white text-charcoal-900 border border-charcoal-200 px-8 py-3.5 rounded-full font-bold hover:bg-charcoal-50 transition-colors">
+                                <button className="bg-white text-charcoal-900 border border-charcoal-200 px-8 py-3.5 rounded-xl font-bold hover:bg-charcoal-50 transition-colors">
                                     View Success Stories
                                 </button>
                             </div>

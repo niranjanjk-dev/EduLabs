@@ -53,10 +53,10 @@ const Hero = () => {
                         transition={{ duration: 0.5, delay: 0.3 }}
                         className="flex flex-col sm:flex-row items-center justify-center gap-4"
                     >
-                        <button className="w-full sm:w-auto bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-full font-semibold text-lg transition-all shadow-lg hover:shadow-primary-500/30 flex items-center justify-center gap-2">
+                        <button className="w-full sm:w-auto bg-primary-500 hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-semibold text-lg transition-all shadow-lg hover:shadow-primary-500/30 flex items-center justify-center gap-2">
                             Start Your Journey <ArrowRight size={20} />
                         </button>
-                        <button className="w-full sm:w-auto bg-white hover:bg-charcoal-50 text-charcoal-700 border border-charcoal-200 px-8 py-4 rounded-full font-semibold text-lg transition-all flex items-center justify-center gap-2">
+                        <button className="w-full sm:w-auto bg-white hover:bg-charcoal-50 text-charcoal-700 border border-charcoal-200 px-8 py-4 rounded-xl font-semibold text-lg transition-all flex items-center justify-center gap-2">
                             View Success Stories
                         </button>
                     </motion.div>

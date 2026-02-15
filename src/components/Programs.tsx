@@ -30,7 +30,7 @@ const Programs = () => {
                     {programs.map((program) => (
                         <span
                             key={program}
-                            className="px-6 py-3 rounded-full bg-charcoal-800 hover:bg-primary-600 hover:text-white border border-charcoal-700 hover:border-primary-500 transition-all cursor-pointer text-charcoal-200 text-sm md:text-base font-medium"
+                            className="px-6 py-3 rounded-xl bg-charcoal-800 hover:bg-primary-600 hover:text-white border border-charcoal-700 hover:border-primary-500 transition-all cursor-pointer text-charcoal-200 text-sm md:text-base font-medium"
                         >
                             {program}
                         </span>

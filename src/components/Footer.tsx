@@ -124,10 +124,10 @@ const Footer = () => {
                                     onMouseEnter={() => setIsAutoPlayPaused(true)}
                                     onMouseLeave={() => setIsAutoPlayPaused(false)}
                                 >
-                                    <button onClick={handleManualPrev} className="w-9 h-9 rounded-full border border-charcoal-700 flex items-center justify-center text-charcoal-400 hover:text-white hover:bg-charcoal-800 transition-all active:scale-95">
+                                    <button onClick={handleManualPrev} className="w-9 h-9 rounded-xl border border-charcoal-700 flex items-center justify-center text-charcoal-400 hover:text-white hover:bg-charcoal-800 transition-all active:scale-95">
                                         <ArrowLeft size={16} />
                                     </button>
-                                    <button onClick={handleManualNext} className="w-9 h-9 rounded-full bg-primary-500 text-white flex items-center justify-center hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/20 active:scale-95">
+                                    <button onClick={handleManualNext} className="w-9 h-9 rounded-xl bg-primary-500 text-white flex items-center justify-center hover:bg-primary-600 transition-all shadow-lg shadow-primary-500/20 active:scale-95">
                                         <ArrowRight size={16} />
                                     </button>
                                 </div>
@@ -181,7 +181,7 @@ const Footer = () => {
                                             href={`https://maps.google.com/?q=${encodeURIComponent(currentBranch.address)}`}
                                             target="_blank"
                                             rel="noopener noreferrer"
-                                            className="flex items-center gap-2 bg-charcoal-900/90 backdrop-blur px-3 py-1.5 rounded-lg text-[10px] font-bold text-white border border-charcoal-700 shadow-xl hover:bg-primary-500 hover:border-primary-500 transition-all"
+                                            className="flex items-center gap-2 bg-charcoal-900/90 backdrop-blur px-3 py-1.5 rounded-xl text-[10px] font-bold text-white border border-charcoal-700 shadow-xl hover:bg-primary-500 hover:border-primary-500 transition-all"
                                         >
                                             <MapPin size={12} />
                                             Directions
@@ -236,7 +236,7 @@ const Footer = () => {
                                 placeholder="Your email..."
                                 className="bg-charcoal-950 border border-charcoal-700 rounded-lg px-4 py-3 text-sm text-white focus:outline-none focus:border-primary-500 focus:ring-1 focus:ring-primary-500 w-full transition-all"
                             />
-                            <button className="bg-secondary-500 hover:bg-secondary-600 text-charcoal-950 px-6 py-3 rounded-lg text-sm font-bold transition-all shadow-lg shadow-secondary-500/20 whitespace-nowrap">
+                            <button className="bg-secondary-500 hover:bg-secondary-600 text-charcoal-950 px-6 py-3 rounded-xl text-sm font-bold transition-all shadow-lg shadow-secondary-500/20 whitespace-nowrap">
                                 Subscribe
                             </button>
                         </form>
