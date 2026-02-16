@@ -24,19 +24,19 @@ const Accommodation = () => {
     ];
 
     return (
-        <section className="py-24 bg-charcoal-50" id="accommodation">
+        <section className="py-16 md:py-24 bg-charcoal-50" id="accommodation">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">Home Away From Home</span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-charcoal-900 mt-3 mb-6">
+                <div className="text-center mb-12 md:mb-16">
+                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Home Away From Home</span>
+                    <h2 className="text-2xl md:text-5xl font-bold text-charcoal-900 mt-2 md:mt-3 mb-4 md:mb-6">
                         Seamless <span className="text-secondary-600">Accommodation</span> Support
                     </h2>
-                    <p className="text-charcoal-600 max-w-2xl mx-auto text-lg">
+                    <p className="text-charcoal-600 max-w-2xl mx-auto text-base md:text-lg">
                         We partner with trusted housing providers globally to ensure you have a safe, comfortable, and affordable place to stay from day one.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {options.map((option, idx) => (
                         <motion.div
                             key={idx}

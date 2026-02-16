@@ -3,9 +3,9 @@ import { ArrowRight, CheckCircle2 } from 'lucide-react';
 
 const About = () => {
     return (
-        <section className="py-24 bg-white overflow-hidden" id="about">
+        <section className="py-16 md:py-24 bg-white overflow-hidden" id="about">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row items-center gap-16">
+                <div className="flex flex-col lg:flex-row items-center gap-10 md:gap-16">
                     {/* Image Side */}
                     <motion.div
                         initial={{ opacity: 0, x: -50 }}
@@ -37,14 +37,14 @@ const About = () => {
                             viewport={{ once: true }}
                             transition={{ duration: 0.6, delay: 0.2 }}
                         >
-                            <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">Who We Are</span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mt-3 mb-6 leading-tight">
+                            <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Who We Are</span>
+                            <h2 className="text-3xl md:text-5xl font-bold text-charcoal-900 mt-2 md:mt-3 mb-4 md:mb-6 leading-tight">
                                 Empowering the Next Generation of <span className="text-secondary-600">Global Citizens</span>
                             </h2>
-                            <p className="text-charcoal-600 text-lg leading-relaxed mb-6">
+                            <p className="text-charcoal-600 text-base md:text-lg leading-relaxed mb-6">
                                 Founded by alumni of Ivy League universities, we understand the challenges of studying abroad firsthand. We are not just consultants; we are mentors committed to your academic and professional success.
                             </p>
-                            <p className="text-charcoal-600 text-lg leading-relaxed mb-8">
+                            <p className="text-charcoal-600 text-base md:text-lg leading-relaxed mb-8">
                                 Our mission is to democratize access to global education by providing transparent, honest, and strategic guidance to students from all backgrounds.
                             </p>
 

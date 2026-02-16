@@ -27,19 +27,19 @@ const Blog = () => {
     ];
 
     return (
-        <section className="py-24 bg-white" id="blog">
+        <section className="py-16 md:py-24 bg-white" id="blog">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">Insights & Updates</span>
-                    <h2 className="text-3xl md:text-5xl font-bold text-charcoal-900 mt-3 mb-6">
+                <div className="text-center mb-12 md:mb-16">
+                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Insights & Updates</span>
+                    <h2 className="text-2xl md:text-5xl font-bold text-charcoal-900 mt-2 md:mt-3 mb-4 md:mb-6">
                         Latest from the <span className="text-secondary-600">Blog</span>
                     </h2>
-                    <p className="text-charcoal-600 max-w-xl mx-auto text-lg">
+                    <p className="text-charcoal-600 max-w-xl mx-auto text-base md:text-lg">
                         Stay ahead of the curve with our expert analysis, student stories, and industry updates.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {articles.map((article, idx) => (
                         <motion.div
                             key={idx}

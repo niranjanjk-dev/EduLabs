@@ -26,9 +26,9 @@ const ScholarshipAssistance = () => {
     ];
 
     return (
-        <section className="py-24 bg-white" id="scholarships">
+        <section className="py-16 md:py-24 bg-white" id="scholarships">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col lg:flex-row gap-16 items-center">
+                <div className="flex flex-col lg:flex-row gap-10 md:gap-16 items-center">
                     <div className="lg:w-1/2">
                         <motion.div
                             initial={{ opacity: 0, x: -20 }}
@@ -37,18 +37,18 @@ const ScholarshipAssistance = () => {
                             className="relative"
                         >
                             <div className="absolute -top-10 -left-10 w-32 h-32 bg-primary-100 rounded-full blur-3xl opacity-60" />
-                            <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm relative z-10">
+                            <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm relative z-10">
                                 Financial Freedom
                             </span>
-                            <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mt-3 mb-6 relative z-10 leading-tight">
+                            <h2 className="text-3xl md:text-5xl font-bold text-charcoal-900 mt-2 md:mt-3 mb-4 md:mb-6 relative z-10 leading-tight">
                                 Maximize Your <br />
                                 <span className="text-secondary-500">Scholarship Potential</span>
                             </h2>
-                            <p className="text-charcoal-600 text-lg leading-relaxed mb-8 relative z-10">
+                            <p className="text-charcoal-600 text-base md:text-lg leading-relaxed mb-6 md:mb-8 relative z-10">
                                 Don't let finances hold you back. Our dedicated scholarship team has helped 95% of our students secure some form of financial aid, turning their study abroad dreams into debt-free reality.
                             </p>
 
-                            <div className="flex gap-4">
+                            <div className="flex flex-col sm:flex-row gap-4">
                                 <button className="bg-primary-500 text-white px-8 py-3.5 rounded-xl font-bold hover:bg-primary-600 transition-all shadow-lg hover:shadow-primary-500/25">
                                     Get Free Assessment
                                 </button>
@@ -59,7 +59,7 @@ const ScholarshipAssistance = () => {
                         </motion.div>
                     </div>
 
-                    <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="lg:w-1/2 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                         {benefits.map((benefit, idx) => (
                             <motion.div
                                 key={idx}
@@ -67,7 +67,7 @@ const ScholarshipAssistance = () => {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 viewport={{ once: true }}
                                 transition={{ delay: idx * 0.1 }}
-                                className="bg-charcoal-50 p-8 rounded-3xl hover:bg-white hover:shadow-xl border border-transparent hover:border-primary-100 transition-all duration-300 group"
+                                className="bg-charcoal-50 p-6 md:p-8 rounded-3xl hover:bg-white hover:shadow-xl border border-transparent hover:border-primary-100 transition-all duration-300 group"
                             >
                                 <div className="w-12 h-12 bg-white rounded-xl shadow-sm flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                                     {benefit.icon}

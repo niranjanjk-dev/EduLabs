@@ -10,11 +10,11 @@ const FloatingContact = () => {
             initial={{ scale: 0 }}
             animate={{ scale: 1 }}
             transition={{ delay: 1, type: "spring" }}
-            className="fixed bottom-8 right-8 z-50 group"
+            className="fixed bottom-4 right-4 md:bottom-8 md:right-8 z-50 group"
         >
             <div className="absolute inset-0 bg-green-500 rounded-full animate-ping opacity-20 duration-2000"></div>
-            <div className="relative bg-[#25D366] hover:bg-[#20bd5a] text-white p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
-                <MessageCircle size={32} fill="white" className="mr-0" />
+            <div className="relative bg-[#25D366] hover:bg-[#20bd5a] text-white p-3 md:p-4 rounded-full shadow-2xl flex items-center justify-center transition-transform hover:scale-110 cursor-pointer">
+                <MessageCircle size={28} className="md:w-8 md:h-8" fill="white" />
             </div>
 
             {/* Tooltip */}

@@ -14,24 +14,24 @@ const countries = [
 // Placeholder for content - dynamic based on selection
 const CountryContent = ({ activeCountry }: { activeCountry: string }) => {
     return (
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center text-white">
-            <div className="space-y-6">
-                <h2 className="text-4xl md:text-5xl font-bold tracking-tight">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center text-white">
+            <div className="space-y-4 md:space-y-6">
+                <h2 className="text-2xl md:text-5xl font-bold tracking-tight">
                     Study in {countries.find(c => c.id === activeCountry)?.label}
                 </h2>
-                <p className="text-white/80 text-lg leading-relaxed max-w-xl">
+                <p className="text-white/80 text-base md:text-lg leading-relaxed max-w-xl">
                     Unlock world-class education opportunities, diverse culture, and career growth in the {countries.find(c => c.id === activeCountry)?.label}. We guide you through universities, scholarships, and visa processes.
                 </p>
 
-                <div className="flex flex-wrap gap-3 pt-4">
+                <div className="flex flex-wrap gap-2 md:gap-3 pt-2 md:pt-4">
                     {['Top Ranked Universities', 'Post-Study Work Visa', 'Scholarships Available'].map((tag) => (
-                        <span key={tag} className="px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-sm font-medium">
+                        <span key={tag} className="px-3 py-1.5 md:px-4 md:py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-xs md:text-sm font-medium">
                             {tag}
                         </span>
                     ))}
                 </div>
 
-                <button className="mt-8 bg-white text-charcoal-900 px-8 py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-white/90 transition-all">
+                <button className="mt-6 md:mt-8 bg-white text-charcoal-900 px-6 py-2.5 md:px-8 md:py-3 rounded-xl font-bold flex items-center gap-2 hover:bg-white/90 transition-all text-sm md:text-base">
                     Explore {countries.find(c => c.id === activeCountry)?.label} <ChevronRight size={20} />
                 </button>
             </div>
@@ -53,11 +53,11 @@ const CountryFeature = () => {
     const [activeTab, setActiveTab] = useState('usa');
 
     return (
-        <section className="py-24 bg-white" id="countries">
+        <section className="py-16 md:py-24 bg-white" id="countries">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col items-center mb-12">
-                    <span className="text-primary-600 font-semibold mb-3 tracking-wider uppercase text-sm">Destinations</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-center text-charcoal-900 mb-8">
+                <div className="flex flex-col items-center mb-8 md:mb-12">
+                    <span className="text-primary-600 font-semibold mb-2 md:mb-3 tracking-wider uppercase text-xs md:text-sm">Destinations</span>
+                    <h2 className="text-2xl md:text-4xl font-bold text-center text-charcoal-900 mb-6 md:mb-8">
                         Choose Your Dream Destination
                     </h2>
 
@@ -85,7 +85,7 @@ const CountryFeature = () => {
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4 }}
                     className={cn(
-                        "rounded-3xl p-8 md:p-12 lg:p-16 overflow-hidden relative shadow-2xl transition-colors duration-500",
+                        "rounded-3xl p-6 md:p-12 lg:p-16 overflow-hidden relative shadow-2xl transition-colors duration-500",
                         `bg-gradient-to-br ${countries.find(c => c.id === activeTab)?.gradient}`
                     )}
                 >

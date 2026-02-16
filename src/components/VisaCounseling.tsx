@@ -26,14 +26,14 @@ const VisaCounseling = () => {
     ];
 
     return (
-        <section className="py-24 bg-charcoal-900 text-white overflow-hidden" id="visa">
+        <section className="py-16 md:py-24 bg-charcoal-900 text-white overflow-hidden" id="visa">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-20">
-                    <span className="text-primary-400 font-bold tracking-wider uppercase text-sm">Visa Success Rate: 99.8%</span>
-                    <h2 className="text-3xl md:text-5xl font-bold mt-4 mb-6">
+                <div className="text-center mb-12 md:mb-20">
+                    <span className="text-primary-400 font-bold tracking-wider uppercase text-xs md:text-sm">Visa Success Rate: 99.8%</span>
+                    <h2 className="text-2xl md:text-5xl font-bold mt-2 md:mt-4 mb-4 md:mb-6">
                         Visa Approval <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-400">Made Simple</span>
                     </h2>
-                    <p className="text-charcoal-400 max-w-2xl mx-auto text-lg">
+                    <p className="text-charcoal-400 max-w-2xl mx-auto text-base md:text-lg">
                         Navigate the complex immigration process with confidence. Our detailed timeline ensures you never miss a deadline.
                     </p>
                 </div>
@@ -42,7 +42,7 @@ const VisaCounseling = () => {
                     {/* Connecting Line */}
                     <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-gradient-to-r from-transparent via-charcoal-700 to-transparent -translate-y-1/2 z-0" />
 
-                    <div className="grid grid-cols-1 md:grid-cols-4 gap-8 relative z-10">
+                    <div className="grid grid-cols-1 md:grid-cols-4 gap-6 md:gap-8 relative z-10">
                         {steps.map((step, idx) => (
                             <motion.div
                                 key={idx}

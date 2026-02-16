@@ -57,23 +57,23 @@ const Footer = () => {
     };
 
     return (
-        <footer className="bg-charcoal-950 text-white pt-24 pb-12" id="contact">
+        <footer className="bg-charcoal-950 text-white pt-16 pb-8 md:pt-24 md:pb-12" id="contact">
             <div className="container mx-auto px-6">
 
                 {/* 1. Global Presence Section */}
-                <div className="mb-24">
-                    <div className="flex flex-col items-center justify-center mb-16 space-y-4">
-                        <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight text-center">Our Presence Across India</h3>
+                <div className="mb-16 md:mb-24">
+                    <div className="flex flex-col items-center justify-center mb-10 md:mb-16 space-y-4">
+                        <h3 className="text-xl md:text-3xl font-bold text-white tracking-tight text-center">Our Presence Across India</h3>
                         <p className="text-charcoal-400 text-sm max-w-lg text-center">
                             Visit our offices in major cities for in-person counseling and support.
                         </p>
                     </div>
 
                     {/* Unified 3-Column Card Container */}
-                    <div className="bg-charcoal-900 rounded-[2rem] overflow-hidden border border-charcoal-800 shadow-2xl grid grid-cols-1 lg:grid-cols-3 min-h-[450px]">
+                    <div className="bg-charcoal-900 rounded-[2rem] overflow-hidden border border-charcoal-800 shadow-2xl grid grid-cols-1 lg:grid-cols-3 min-h-[auto] lg:min-h-[450px]">
 
                         {/* Column 1: Text Details & Controls */}
-                        <div className="p-8 md:p-10 flex flex-col justify-between relative bg-gradient-to-br from-charcoal-900 to-charcoal-950 border-b lg:border-b-0 lg:border-r border-charcoal-800">
+                        <div className="p-6 md:p-10 flex flex-col justify-between relative bg-gradient-to-br from-charcoal-900 to-charcoal-950 border-b lg:border-b-0 lg:border-r border-charcoal-800">
                             <div className="relative z-10 flex-grow flex flex-col justify-center">
                                 <AnimatePresence mode="wait">
                                     <motion.div
@@ -88,7 +88,7 @@ const Footer = () => {
                                         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-primary-500/10 text-primary-400 text-[10px] font-bold uppercase tracking-wider mb-4 border border-primary-500/20">
                                             {currentBranch.state}
                                         </div>
-                                        <h2 className="text-3xl md:text-4xl font-bold text-white mb-6 tracking-tight">
+                                        <h2 className="text-2xl md:text-4xl font-bold text-white mb-4 md:mb-6 tracking-tight">
                                             {currentBranch.city}
                                         </h2>
 
@@ -195,13 +195,13 @@ const Footer = () => {
                 </div>
 
                 {/* 3. Brand & Newsletter */}
-                <div className="flex flex-col lg:flex-row justify-between items-center gap-12 mb-20 py-12 border-t border-b border-charcoal-800/50">
+                <div className="flex flex-col lg:flex-row justify-between items-center gap-8 md:gap-12 mb-12 md:mb-20 py-8 md:py-12 border-t border-b border-charcoal-800/50">
                     <div className="max-w-lg text-center lg:text-left">
                         <div className="flex items-center justify-center lg:justify-start gap-3 mb-4">
-                            <div className="w-10 h-10 bg-primary-500 rounded-xl flex items-center justify-center text-white font-bold text-xl shadow-lg shadow-primary-500/20">
+                            <div className="w-8 h-8 md:w-10 md:h-10 bg-primary-500 rounded-xl flex items-center justify-center text-white font-bold text-lg md:text-xl shadow-lg shadow-primary-500/20">
                                 E
                             </div>
-                            <span className="text-2xl font-bold tracking-tight text-white">EduConsult</span>
+                            <span className="text-xl md:text-2xl font-bold tracking-tight text-white">EduLabs</span>
                         </div>
                         <p className="text-charcoal-400 text-sm leading-relaxed mb-6">
                             Simplifying your journey from application to arrival. Expanding horizons for students across India.
@@ -284,7 +284,7 @@ const Footer = () => {
 
                 <div className="border-t border-charcoal-800 pt-8 mt-4 text-center flex flex-col md:flex-row justify-between items-center gap-4 text-charcoal-500 text-[10px] uppercase tracking-wider font-medium">
                     <div className="flex flex-col md:flex-row gap-4 items-center">
-                        <p>© 2025 EduConsult Inc. All rights reserved.</p>
+                        <p>© 2025 EduLabs Inc. All rights reserved.</p>
                         <span className="hidden md:block text-charcoal-700">|</span>
                         <p className="text-charcoal-600">Powered by LbxSuite</p>
                     </div>

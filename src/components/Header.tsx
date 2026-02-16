@@ -50,11 +50,11 @@ const Header = () => {
             <div className="container mx-auto px-6 flex items-center justify-between">
                 {/* Logo */}
                 <div className="flex items-center gap-2">
-                    <div className="w-10 h-10 bg-primary-500 rounded-xl flex items-center justify-center text-white font-bold text-2xl shadow-lg shadow-primary-500/20">
+                    <div className="w-8 h-8 md:w-10 md:h-10 bg-primary-500 rounded-xl flex items-center justify-center text-white font-bold text-lg md:text-2xl shadow-lg shadow-primary-500/20">
                         E
                     </div>
-                    <span className={cn("text-2xl font-bold tracking-tight transition-colors", isScrolled ? "text-charcoal-900" : "text-charcoal-900")}>
-                        EduConsult
+                    <span className={cn("text-xl md:text-2xl font-bold tracking-tight transition-colors", isScrolled ? "text-charcoal-900" : "text-charcoal-900")}>
+                        EduLabs
                     </span>
                 </div>
 
@@ -105,7 +105,7 @@ const Header = () => {
                     className="md:hidden text-charcoal-900 absolute right-6"
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 >
-                    {isMobileMenuOpen ? <X size={28} /> : <Menu size={28} />}
+                    {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
                 </button>
 
                 {/* Mobile Nav */}
@@ -115,7 +115,7 @@ const Header = () => {
                             <div key={link.name}>
                                 <a
                                     href={link.href}
-                                    className="text-lg font-medium text-charcoal-900 block mb-2"
+                                    className="text-base font-medium text-charcoal-900 block mb-2"
                                     onClick={() => !link.dropdown && setIsMobileMenuOpen(false)}
                                 >
                                     {link.name}

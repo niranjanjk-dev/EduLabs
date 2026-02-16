@@ -43,10 +43,10 @@ const MarqueeRow = ({ items, direction = 'left', speed = 20 }: { items: typeof u
 
 const Partners = () => {
     return (
-        <section className="py-24 bg-charcoal-50/50 overflow-hidden border-y border-charcoal-100">
-            <div className="container mx-auto px-6 text-center mb-12">
-                <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">Global Network</span>
-                <h2 className="text-3xl font-bold text-charcoal-900 mt-2">
+        <section className="py-16 md:py-24 bg-charcoal-50/50 overflow-hidden border-y border-charcoal-100">
+            <div className="container mx-auto px-6 text-center mb-8 md:mb-12">
+                <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Global Network</span>
+                <h2 className="text-2xl md:text-3xl font-bold text-charcoal-900 mt-2">
                     Trusted by World's Leading Universities
                 </h2>
             </div>

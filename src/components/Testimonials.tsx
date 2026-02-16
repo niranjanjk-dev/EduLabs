@@ -10,22 +10,22 @@ const Testimonials = () => {
     ];
 
     return (
-        <section className="py-24 bg-white" id="stories">
+        <section className="py-16 md:py-24 bg-white" id="stories">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">Success Stories</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mt-2">
+                <div className="text-center mb-12 md:mb-16">
+                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Success Stories</span>
+                    <h2 className="text-2xl md:text-4xl font-bold text-charcoal-900 mt-2">
                         We help you <span className="text-primary-600">study abroad!</span>
                     </h2>
                 </div>
 
                 {/* Video Cards Grid */}
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-24">
+                <div className="flex overflow-x-auto pb-6 md:pb-0 gap-4 md:grid md:grid-cols-2 lg:grid-cols-4 md:gap-6 mb-12 md:mb-24 -mx-6 px-6 md:mx-0 md:px-0 scrollbar-hide">
                     {stories.map((story, idx) => (
                         <motion.div
                             key={idx}
                             whileHover={{ y: -10 }}
-                            className="relative rounded-2xl overflow-hidden aspect-[3/4] group cursor-pointer shadow-lg"
+                            className="relative rounded-2xl overflow-hidden aspect-[3/4] group cursor-pointer shadow-lg min-w-[260px] md:min-w-0 flex-shrink-0"
                         >
                             <img
                                 src={story.image}
@@ -35,14 +35,14 @@ const Testimonials = () => {
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent opacity-90" />
 
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-14 h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
-                                    <Play fill="white" className="text-white ml-1" size={24} />
+                                <div className="w-12 h-12 md:w-14 md:h-14 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center group-hover:scale-110 transition-transform">
+                                    <Play fill="white" className="text-white ml-1 w-5 h-5 md:w-6 md:h-6" />
                                 </div>
                             </div>
 
-                            <div className="absolute bottom-0 left-0 p-6 text-white text-left">
+                            <div className="absolute bottom-0 left-0 p-5 md:p-6 text-white text-left">
                                 <h3 className="font-bold text-lg">{story.name}</h3>
-                                <p className="text-sm opacity-80">{story.university}</p>
+                                <p className="text-xs md:text-sm opacity-80">{story.university}</p>
                                 <button className="mt-3 bg-primary-500 hover:bg-primary-600 px-4 py-1.5 rounded-xl text-xs font-bold transition-colors">
                                     Watch Story
                                 </button>
@@ -52,7 +52,7 @@ const Testimonials = () => {
                 </div>
 
                 {/* Featured Success Story */}
-                <div className="bg-primary-50 rounded-3xl p-8 md:p-12 flex flex-col lg:flex-row items-center gap-12">
+                <div className="bg-primary-50 rounded-3xl p-6 md:p-8 lg:p-12 flex flex-col lg:flex-row items-center gap-8 md:gap-12">
                     <div className="w-full lg:w-1/2 relative">
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-200 rounded-full blur-2xl opacity-50" />
                         <img
@@ -62,10 +62,10 @@ const Testimonials = () => {
                         />
                     </div>
 
-                    <div className="w-full lg:w-1/2 space-y-6">
-                        <Quote className="text-primary-400 w-12 h-12" />
-                        <h3 className="text-2xl md:text-3xl font-bold text-charcoal-900 leading-tight">
-                            "EduConsult made my dream of studying at Oxford a reality. Their guidance on scholarship applications was a game-changer."
+                    <div className="w-full lg:w-1/2 space-y-4 md:space-y-6">
+                        <Quote className="text-primary-400 w-10 h-10 md:w-12 md:h-12" />
+                        <h3 className="text-xl md:text-3xl font-bold text-charcoal-900 leading-tight">
+                            "EduLabs made my dream of studying at Oxford a reality. Their guidance on scholarship applications was a game-changer."
                         </h3>
 
                         <div>

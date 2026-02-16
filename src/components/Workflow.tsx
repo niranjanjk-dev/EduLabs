@@ -23,23 +23,23 @@ const Workflow = () => {
     ];
 
     return (
-        <section className="py-24 bg-white" id="how-we-work">
+        <section className="py-16 md:py-24 bg-white" id="how-we-work">
             <div className="container mx-auto px-6">
-                <div className="text-center mb-16">
-                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">Our Process</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mt-2">
+                <div className="text-center mb-12 md:mb-16">
+                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Our Process</span>
+                    <h2 className="text-2xl md:text-4xl font-bold text-charcoal-900 mt-2">
                         How We Work
                     </h2>
-                    <p className="text-charcoal-500 mt-4 max-w-2xl mx-auto">
+                    <p className="text-charcoal-500 mt-3 md:mt-4 max-w-2xl mx-auto text-base md:text-md">
                         A structured, transparent, and personalized approach to ensure your admission success.
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8">
                     {steps.map((step, index) => (
                         <div
                             key={index}
-                            className="bg-primary-50/50 hover:bg-primary-50 rounded-3xl p-8 transition-colors duration-300 border border-primary-100/50 hover:border-primary-200"
+                            className="bg-primary-50/50 hover:bg-primary-50 rounded-3xl p-6 md:p-8 transition-colors duration-300 border border-primary-100/50 hover:border-primary-200"
                         >
                             <div className="bg-white w-16 h-16 rounded-2xl flex items-center justify-center shadow-sm mb-6 text-primary-600">
                                 {step.icon}

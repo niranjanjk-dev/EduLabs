@@ -62,21 +62,21 @@ const Downloads = () => {
     };
 
     return (
-        <section className="py-24 bg-white" id="downloads">
+        <section className="py-16 md:py-24 bg-white" id="downloads">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-8 md:mb-12 gap-4 md:gap-6">
                     <div className="max-w-2xl">
-                        <span className="text-secondary-600 font-semibold tracking-wider uppercase text-sm">Free Resources</span>
-                        <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mt-2">
+                        <span className="text-secondary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Free Resources</span>
+                        <h2 className="text-2xl md:text-4xl font-bold text-charcoal-900 mt-2">
                             Download Your <span className="text-primary-600">Success Kit</span>
                         </h2>
-                        <p className="text-charcoal-600 mt-4 text-lg">
+                        <p className="text-charcoal-600 mt-3 md:mt-4 text-base md:text-lg">
                             Expert-curated guides, checklists, and templates to kickstart your study abroad journey.
                         </p>
                     </div>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
                     {resources.map((res, index) => (
                         <motion.div
                             key={index}

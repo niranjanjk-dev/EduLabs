@@ -8,7 +8,7 @@ const FAQ = () => {
 
     const faqs = [
         {
-            question: "What services does EduConsult provide?",
+            question: "What services does EduLabs provide?",
             answer: "We offer end-to-end guidance including profile evaluation, university shortlisting, SOP/LOR editing, visa assistance, and pre-departure briefings."
         },
         {
@@ -30,11 +30,11 @@ const FAQ = () => {
     ];
 
     return (
-        <section className="py-24 bg-charcoal-50" id="faq">
+        <section className="py-16 md:py-24 bg-charcoal-50" id="faq">
             <div className="container mx-auto px-6 max-w-4xl">
-                <div className="text-center mb-12">
-                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-sm">FAQ</span>
-                    <h2 className="text-3xl md:text-4xl font-bold text-charcoal-900 mt-2">
+                <div className="text-center mb-8 md:mb-12">
+                    <span className="text-primary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">FAQ</span>
+                    <h2 className="text-2xl md:text-4xl font-bold text-charcoal-900 mt-2">
                         Frequently Asked Questions
                     </h2>
                 </div>

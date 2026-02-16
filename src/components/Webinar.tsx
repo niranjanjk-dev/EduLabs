@@ -22,15 +22,15 @@ const Webinar = () => {
     ];
 
     return (
-        <section className="py-24 bg-charcoal-900 text-white" id="webinars">
+        <section className="py-16 md:py-24 bg-charcoal-900 text-white" id="webinars">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-12">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-8 md:mb-12">
                     <div className="max-w-xl">
-                        <span className="text-primary-400 font-semibold tracking-wider uppercase text-sm">Learning Hub</span>
-                        <h2 className="text-3xl md:text-4xl font-bold mt-3">
+                        <span className="text-primary-400 font-semibold tracking-wider uppercase text-xs md:text-sm">Learning Hub</span>
+                        <h2 className="text-2xl md:text-4xl font-bold mt-2 md:mt-3">
                             Join Our <span className="text-secondary-400">Live Masterclasses</span>
                         </h2>
-                        <p className="text-charcoal-400 mt-4 text-lg">
+                        <p className="text-charcoal-400 mt-3 md:mt-4 text-base md:text-lg">
                             Get insider tips, ask questions in real-time, and learn from the experts without spending a dime.
                         </p>
                     </div>
@@ -39,14 +39,14 @@ const Webinar = () => {
                     </button>
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                     {events.map((event, idx) => (
                         <motion.div
                             key={idx}
                             whileHover={{ y: -5 }}
                             className="bg-charcoal-800 rounded-3xl overflow-hidden border border-charcoal-700 hover:border-primary-500/50 transition-all group cursor-pointer"
                         >
-                            <div className="h-64 overflow-hidden relative">
+                            <div className="h-48 md:h-64 overflow-hidden relative">
                                 <div className="absolute top-4 left-4 bg-primary-600 text-white text-xs font-bold px-3 py-1 rounded-full z-10">
                                     {event.tag}
                                 </div>
@@ -56,7 +56,7 @@ const Webinar = () => {
                                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
                                 />
                             </div>
-                            <div className="p-8">
+                            <div className="p-6 md:p-8">
                                 <div className="flex items-center gap-6 text-sm text-charcoal-400 mb-4">
                                     <div className="flex items-center gap-2">
                                         <Calendar size={16} className="text-primary-400" />
@@ -67,10 +67,10 @@ const Webinar = () => {
                                         <span>{event.time}</span>
                                     </div>
                                 </div>
-                                <h3 className="text-2xl font-bold mb-4 group-hover:text-primary-400 transition-colors">
+                                <h3 className="text-xl md:text-2xl font-bold mb-3 md:mb-4 group-hover:text-primary-400 transition-colors">
                                     {event.title}
                                 </h3>
-                                <div className="flex items-center gap-3 mb-8">
+                                <div className="flex items-center gap-3 mb-6 md:mb-8">
                                     <div className="w-8 h-8 rounded-full bg-charcoal-700 flex items-center justify-center">
                                         <User size={14} className="text-white" />
                                     </div>

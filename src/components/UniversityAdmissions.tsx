@@ -3,12 +3,12 @@ import { PenTool, Search, Target, Layout } from 'lucide-react';
 
 const UniversityAdmissions = () => {
     return (
-        <section className="py-24 bg-white" id="admissions">
+        <section className="py-16 md:py-24 bg-white" id="admissions">
             <div className="container mx-auto px-6">
-                <div className="flex flex-col md:flex-row justify-between items-end mb-16">
+                <div className="flex flex-col md:flex-row justify-between items-end mb-12 md:mb-16">
                     <div className="max-w-2xl">
-                        <span className="text-secondary-600 font-semibold tracking-wider uppercase text-sm">Admission Strategy</span>
-                        <h2 className="text-4xl md:text-5xl font-bold text-charcoal-900 mt-3">
+                        <span className="text-secondary-600 font-semibold tracking-wider uppercase text-xs md:text-sm">Admission Strategy</span>
+                        <h2 className="text-3xl md:text-5xl font-bold text-charcoal-900 mt-2 md:mt-3">
                             Crafting Your <span className="text-primary-600">Perfect Profile</span>
                         </h2>
                     </div>
@@ -17,14 +17,20 @@ const UniversityAdmissions = () => {
                             From university shortlisting to SOP editing, we optimize every aspect of your application.
                         </p>
                     </div>
+                    {/* Mobile only description */}
+                    <div className="md:hidden mt-4">
+                        <p className="text-charcoal-600 text-base leading-relaxed">
+                            From university shortlisting to SOP editing, we optimize every aspect of your application.
+                        </p>
+                    </div>
                 </div>
 
                 {/* Bento Grid Layout */}
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-6 auto-rows-[300px]">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6 auto-rows-[300px]">
                     {/* Large Main Card */}
                     <motion.div
                         whileHover={{ y: -5 }}
-                        className="md:col-span-2 bg-charcoal-50 rounded-3xl p-10 flex flex-col justify-center relative overflow-hidden group border border-transparent hover:border-charcoal-200 transition-all cursor-pointer"
+                        className="md:col-span-2 bg-charcoal-50 rounded-3xl p-6 md:p-10 flex flex-col justify-center relative overflow-hidden group border border-transparent hover:border-charcoal-200 transition-all cursor-pointer"
                     >
                         <div className="absolute top-0 right-0 p-10 opacity-10 group-hover:opacity-20 transition-opacity">
                             <Target size={120} />
@@ -73,14 +79,14 @@ const UniversityAdmissions = () => {
                     {/* Final Card */}
                     <motion.div
                         whileHover={{ y: -5 }}
-                        className="md:col-span-2 bg-secondary-100/50 rounded-3xl p-10 flex items-center relative overflow-hidden group border border-secondary-100 cursor-pointer"
+                        className="md:col-span-2 bg-secondary-100/50 rounded-3xl p-6 md:p-10 flex items-center relative overflow-hidden group border border-secondary-100 cursor-pointer"
                     >
                         <div className="w-full">
                             <div className="w-12 h-12 bg-white rounded-xl flex items-center justify-center mb-6 shadow-sm">
                                 <Search className="text-secondary-600" size={24} />
                             </div>
                             <h3 className="text-2xl font-bold text-charcoal-900 mb-2">Application Tracking</h3>
-                            <p className="text-charcoal-600">
+                            <p className="text-charcoal-600 text-sm md:text-base">
                                 Real-time updates and dedicated support for every single application you submit.
                             </p>
                         </div>
