@@ -1,16 +1,16 @@
 import { motion } from 'framer-motion';
 
 const universities = [
-    { name: 'Harvard University', logo: 'https://placehold.co/200x80/png?text=Harvard' },
-    { name: 'Stanford University', logo: 'https://placehold.co/200x80/png?text=Stanford' },
-    { name: 'MIT', logo: 'https://placehold.co/200x80/png?text=MIT' },
-    { name: 'University of Oxford', logo: 'https://placehold.co/200x80/png?text=Oxford' },
-    { name: 'Cambridge University', logo: 'https://placehold.co/200x80/png?text=Cambridge' },
-    { name: 'Imperial College', logo: 'https://placehold.co/200x80/png?text=Imperial' },
-    { name: 'ETH Zurich', logo: 'https://placehold.co/200x80/png?text=ETH+Zurich' },
-    { name: 'University of Toronto', logo: 'https://placehold.co/200x80/png?text=Toronto' },
-    { name: 'National University of Singapore', logo: 'https://placehold.co/200x80/png?text=NUS' },
-    { name: 'University of Melbourne', logo: 'https://placehold.co/200x80/png?text=Melbourne' },
+    { name: 'Harvard University', logo: 'https://logo.clearbit.com/harvard.edu' },
+    { name: 'Stanford University', logo: 'https://logo.clearbit.com/stanford.edu' },
+    { name: 'MIT', logo: 'https://logo.clearbit.com/mit.edu' },
+    { name: 'University of Oxford', logo: 'https://logo.clearbit.com/ox.ac.uk' },
+    { name: 'Cambridge University', logo: 'https://logo.clearbit.com/cam.ac.uk' },
+    { name: 'Imperial College', logo: 'https://logo.clearbit.com/imperial.ac.uk' },
+    { name: 'ETH Zurich', logo: 'https://logo.clearbit.com/ethz.ch' },
+    { name: 'University of Toronto', logo: 'https://logo.clearbit.com/utoronto.ca' },
+    { name: 'National University of Singapore', logo: 'https://logo.clearbit.com/nus.edu.sg' },
+    { name: 'University of Melbourne', logo: 'https://logo.clearbit.com/unimelb.edu.au' },
 ];
 
 const UniversityCard = ({ uni }: { uni: { name: string, logo: string } }) => (

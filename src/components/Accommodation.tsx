@@ -7,19 +7,19 @@ const Accommodation = () => {
             title: "On-Campus Dorms",
             price: "$$",
             features: ["Proximity to classes", "Meal plans included", "Community life"],
-            image: "https://placehold.co/400x300/png?text=Dorms"
+            image: "https://images.unsplash.com/photo-1555854877-bab0e564b8d5?auto=format&fit=crop&q=80&w=400"
         },
         {
             title: "Private Apartments",
             price: "$$$",
             features: ["Privacy & Freedom", "Own kitchen", "No curfew"],
-            image: "https://placehold.co/400x300/png?text=Apartments"
+            image: "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&q=80&w=400"
         },
         {
             title: "Managed Student Housing",
             price: "$$",
             features: ["Fully furnished", "All bills included", "Social events"],
-            image: "https://placehold.co/400x300/png?text=Student+Housing"
+            image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=400"
         }
     ];
 

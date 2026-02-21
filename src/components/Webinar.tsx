@@ -8,7 +8,7 @@ const Webinar = () => {
             date: "Oct 15, 2025",
             time: "6:00 PM EST",
             speaker: "Sarah Jenkins, Ex-Visa Officer",
-            image: "https://placehold.co/400x250/png?text=Visa+Webinar",
+            image: "https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?auto=format&fit=crop&q=80&w=400",
             tag: "Free"
         },
         {
@@ -16,7 +16,7 @@ const Webinar = () => {
             date: "Oct 22, 2025",
             time: "7:30 PM EST",
             speaker: "Raj Patel, Scholarship Expert",
-            image: "https://placehold.co/400x250/png?text=Scholarship+Webinar",
+            image: "https://images.unsplash.com/photo-1577413162587-8a9bc4c015b6?auto=format&fit=crop&q=80&w=400",
             tag: "Popular"
         }
     ];

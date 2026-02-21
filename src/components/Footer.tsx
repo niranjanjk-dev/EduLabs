@@ -4,15 +4,15 @@ import { Facebook, Twitter, Instagram, Linkedin, MapPin, Phone, ArrowRight, Arro
 
 const Footer = () => {
     const branches = [
-        { city: "Mumbai", state: "Maharashtra", address: "Bandra Kurla Complex, 400051", phone: "+91 22 1234 5678", image: "https://placehold.co/600x800/2a323c/ffffff?text=Mumbai+Office" },
-        { city: "Delhi", state: "Delhi NCR", address: "Connaught Place, 110001", phone: "+91 11 2345 6789", image: "https://placehold.co/600x800/2a323c/ffffff?text=Delhi+Headquarters" },
-        { city: "Bangalore", state: "Karnataka", address: "Indiranagar, 100 Feet Rd, 560038", phone: "+91 80 3456 7890", image: "https://placehold.co/600x800/2a323c/ffffff?text=Bangalore+Hub" },
-        { city: "Hyderabad", state: "Telangana", address: "Hitech City, Mindspace, 500081", phone: "+91 40 4567 8901", image: "https://placehold.co/600x800/2a323c/ffffff?text=Hyderabad+Center" },
-        { city: "Chennai", state: "Tamil Nadu", address: "Anna Nagar, 2nd Avenue, 600040", phone: "+91 44 5678 9012", image: "https://placehold.co/600x800/2a323c/ffffff?text=Chennai+Branch" },
-        { city: "Pune", state: "Maharashtra", address: "Koregaon Park, 411001", phone: "+91 20 6789 0123", image: "https://placehold.co/600x800/2a323c/ffffff?text=Pune+Office" },
-        { city: "Kolkata", state: "West Bengal", address: "Park Street, 700016", phone: "+91 33 7890 1234", image: "https://placehold.co/600x800/2a323c/ffffff?text=Kolkata+Center" },
-        { city: "Ahmedabad", state: "Gujarat", address: "SG Highway, 380054", phone: "+91 79 8901 2345", image: "https://placehold.co/600x800/2a323c/ffffff?text=Ahmedabad+Branch" },
-        { city: "Jaipur", state: "Rajasthan", address: "C-Scheme, 302001", phone: "+91 141 9012 3456", image: "https://placehold.co/600x800/2a323c/ffffff?text=Jaipur+Office" }
+        { city: "Mumbai", state: "Maharashtra", address: "Bandra Kurla Complex, 400051", phone: "+91 22 1234 5678", image: "https://images.unsplash.com/photo-1566552881560-0be862a7c445?auto=format&fit=crop&q=80&w=600" },
+        { city: "Delhi", state: "Delhi NCR", address: "Connaught Place, 110001", phone: "+91 11 2345 6789", image: "https://images.unsplash.com/photo-1587474260584-136574528ed5?auto=format&fit=crop&q=80&w=600" },
+        { city: "Bangalore", state: "Karnataka", address: "Indiranagar, 100 Feet Rd, 560038", phone: "+91 80 3456 7890", image: "https://images.unsplash.com/photo-1596176530529-78163a4f7af2?auto=format&fit=crop&q=80&w=600" },
+        { city: "Hyderabad", state: "Telangana", address: "Hitech City, Mindspace, 500081", phone: "+91 40 4567 8901", image: "https://images.unsplash.com/photo-1580130732566-0e1ce120e2ef?auto=format&fit=crop&q=80&w=600" },
+        { city: "Chennai", state: "Tamil Nadu", address: "Anna Nagar, 2nd Avenue, 600040", phone: "+91 44 5678 9012", image: "https://images.unsplash.com/photo-1582510003544-4d00b7f74220?auto=format&fit=crop&q=80&w=600" },
+        { city: "Pune", state: "Maharashtra", address: "Koregaon Park, 411001", phone: "+91 20 6789 0123", image: "https://images.unsplash.com/photo-1574768434685-61266b03eb3c?auto=format&fit=crop&q=80&w=600" },
+        { city: "Kolkata", state: "West Bengal", address: "Park Street, 700016", phone: "+91 33 7890 1234", image: "https://images.unsplash.com/photo-1558455581-8b29ea27fbc3?auto=format&fit=crop&q=80&w=600" },
+        { city: "Ahmedabad", state: "Gujarat", address: "SG Highway, 380054", phone: "+91 79 8901 2345", image: "https://images.unsplash.com/photo-1605389656122-fec840ed1a45?auto=format&fit=crop&q=80&w=600" },
+        { city: "Jaipur", state: "Rajasthan", address: "C-Scheme, 302001", phone: "+91 141 9012 3456", image: "https://images.unsplash.com/photo-1631553147856-12c858b9fbd8?auto=format&fit=crop&q=80&w=600" }
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);

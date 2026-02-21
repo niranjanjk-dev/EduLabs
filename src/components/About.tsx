@@ -17,7 +17,7 @@ const About = () => {
                         <div className="absolute inset-0 bg-primary-600 rounded-3xl rotate-6 opacity-10" />
                         <div className="absolute inset-0 bg-secondary-600 rounded-3xl -rotate-6 opacity-10" />
                         <img
-                            src="https://placehold.co/600x700/png?text=Our+Mission"
+                            src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=600"
                             alt="Team Collaboration"
                             className="relative rounded-3xl shadow-2xl w-full object-cover z-10 hover:scale-[1.02] transition-transform duration-500"
                         />

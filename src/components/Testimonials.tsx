@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const Testimonials = () => {
     const stories = [
-        { name: 'Sarah M.', university: 'Stanford University', image: 'https://placehold.co/300x400/png?text=Sarah' },
-        { name: 'Rahul K.', university: 'Imperial College London', image: 'https://placehold.co/300x400/png?text=Rahul' },
-        { name: 'Emily R.', university: 'University of Toronto', image: 'https://placehold.co/300x400/png?text=Emily' },
-        { name: 'David L.', university: 'Melbourne University', image: 'https://placehold.co/300x400/png?text=David' },
+        { name: 'Sarah M.', university: 'Stanford University', image: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&q=80&w=300' },
+        { name: 'Rahul K.', university: 'Imperial College London', image: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=300' },
+        { name: 'Emily R.', university: 'University of Toronto', image: 'https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=300' },
+        { name: 'David L.', university: 'Melbourne University', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=300' },
     ];
 
     return (
@@ -56,7 +56,7 @@ const Testimonials = () => {
                     <div className="w-full lg:w-1/2 relative">
                         <div className="absolute -top-4 -left-4 w-24 h-24 bg-primary-200 rounded-full blur-2xl opacity-50" />
                         <img
-                            src="https://placehold.co/600x400/png?text=Featured+Story"
+                            src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&fit=crop&q=80&w=600"
                             alt="Success Story"
                             className="rounded-2xl shadow-xl w-full object-cover relative z-10"
                         />

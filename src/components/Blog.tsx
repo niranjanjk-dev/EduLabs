@@ -8,21 +8,21 @@ const Blog = () => {
             date: "Sep 28, 2025",
             title: "Top 10 Universities in UK for Data Science (2026 Rankings)",
             desc: "A comprehensive analysis of curriculum, placements, and fees for aspiring data scientists.",
-            image: "https://placehold.co/400x300/png?text=UK+Universities"
+            image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&q=80&w=400"
         },
         {
             category: "Success Story",
             date: "Sep 25, 2025",
             title: "How Ananya Cracked a Full Scholarship at Yale",
             desc: "Read about the exact profile, essays, and extracurriculars that got her fully funded.",
-            image: "https://placehold.co/400x300/png?text=Success+Story"
+            image: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&q=80&w=400"
         },
         {
             category: "Visa",
             date: "Sep 20, 2025",
             title: "Recent Changes in Canadian Student Visa Policies",
             desc: "Everything you need to know about GIC increases and work permit caps.",
-            image: "https://placehold.co/400x300/png?text=Canada+Visa"
+            image: "https://images.unsplash.com/photo-1555881400-74d7acaacd8b?auto=format&fit=crop&q=80&w=400"
         }
     ];
 

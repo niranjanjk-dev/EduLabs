@@ -68,7 +68,11 @@ export default {
                 },
             },
             fontFamily: {
-                sans: ['Inter', 'sans-serif'],
+                sans: ['"Outfit"', 'sans-serif'],
+                body: ['"Plus Jakarta Sans"', 'sans-serif'],
+                serif: ['"Playfair Display"', 'serif'],
+                mono: ['"Space Mono"', 'monospace'],
+                display: ['"Outfit"', 'sans-serif'],
             },
             borderRadius: {
                 '2xl': '1rem',
